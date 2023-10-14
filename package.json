@@ -12,7 +12,7 @@
 	"samples":[
 		{
 			"displayName": "UI Sample Scene",
-			"description": "A sample of how to use the UI scripts in this package.",
+			"description": "A sample of how to use the UI scripts in this package.\nIMPORTANT NOTE: Requires Odin Inspector and DOTweenPro",
 			"path": "Samples/UISampleScene"
 		}
 	]

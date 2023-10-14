@@ -5,7 +5,7 @@
 	"description": "Lightweight package for Unity UI",
 	"unity": "2022.3",
 	"dependencies": {
-		"com.unity.odin": "3.0"
+		"com.unity.odin": "3.0.2"
 	},
 	"author": {
 		"name": "Kam Zhan Yue",

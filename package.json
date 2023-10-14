@@ -4,9 +4,19 @@
 	"displayName": "UI Utility",
 	"description": "Lightweight package for Unity UI",
 	"unity": "2022.3",
+	"dependencies": {
+		"com.unity.odin": "3.1.14.3"
+	},
 	"author": {
 		"name": "Kam Zhan Yue",
 		"email": "kamzhanyue@gmail.com",
 		"url": "https://kam-zhan-yue.github.io/"
-	}
+	},
+	"samples":[
+		{
+			"displayName": "UI Sample Scene",
+			"description": "A sample of how to use the UI scripts in this package.",
+			"path": "Samples/UISampleScene"
+		}
+	]
 }

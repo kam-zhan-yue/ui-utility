@@ -2,7 +2,8 @@
     "name": "Kuroneko.UIUtility",
     "rootNamespace": "",
     "references": [
-        "GUID:02054187d41f5471eb0b6169df0f8311"
+        "GUID:02054187d41f5471eb0b6169df0f8311",
+        "GUID:40a269f2b06f14cf9a35977723533737"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

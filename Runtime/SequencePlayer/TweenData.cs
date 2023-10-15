@@ -2,6 +2,7 @@ using System;
 using DG.Tweening;
 using Sirenix.OdinInspector;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace Kuroneko.UIUtility
 {
@@ -15,7 +16,7 @@ namespace Kuroneko.UIUtility
         public SequenceData sequenceData = new();
 
         [HideLabel, ShowIf("type", TweenType.Callback)]
-        public TweenCallback callback = null;
+        public UnityEvent callback;
         
         [HideLabel, ShowIf("type", TweenType.Interval)]
         public float interval;
@@ -28,7 +29,7 @@ namespace Kuroneko.UIUtility
                     sequenceData.AttachToSequence(_sequence);
                     break;
                 case TweenType.Callback:
-                    _sequence.AppendCallback(callback);
+                    _sequence.AppendCallback(ActivateEvent);
                     break;
                 case TweenType.Interval:
                     _sequence.AppendInterval(interval);
@@ -36,6 +37,11 @@ namespace Kuroneko.UIUtility
                 default:
                     throw new ArgumentOutOfRangeException();
             }
+        }
+
+        private void ActivateEvent()
+        {
+            callback?.Invoke();
         }
         
         private Color GetTweenTypeColour()

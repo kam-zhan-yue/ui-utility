@@ -8,19 +8,14 @@ namespace Kuroneko.UIUtility
     [Serializable]
     public enum RectTransformSequenceType
     {
-        DOScale = 0,
-        DOScaleX,
-        DOScaleY,
-        DOScaleZ,
-        DOMove,
-        DOMoveX,
-        DOMoveY,
-        DOMoveZ,
-        DOLocalMove,
-        DOLocalMoveX,
-        DOLocalMoveY,
-        DOLocalMoveZ,
-        DORotate,
-        DOLocalRotate
+        DOAnchorMax = 0,
+        DOAnchorMin,
+        DOAnchorPos,
+        DOAnchorPos3D,
+        DOPivot,
+        DOPunchAnchorPos,
+        DOShakeAnchorPos,
+        DOSizeDelta,
+        DOShapeCircle
     }
 }

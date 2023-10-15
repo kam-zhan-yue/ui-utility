@@ -14,11 +14,14 @@ namespace Kuroneko.UIUtility
         public SequenceType type = SequenceType.Append;
 
         [HideLabel, HorizontalGroup("SequenceSettings", WIDTH)] [PropertySpace(SPACE)]
-        public SequenceObject sequencer = SequenceObject.RectTransform;
+        public SequenceObject sequencer = SequenceObject.GameObject;
         
         [Title("Sequence Details")]
+        [HideLabel, ShowIf("sequencer", SequenceObject.GameObject)]
+        public GameObjectSequence gameObject = new();
+        
         [HideLabel, ShowIf("sequencer", SequenceObject.RectTransform)]
-        public RectTransformSequence rectTransform = new ();
+        public RectTransformSequence rectTransform = new();
 
         [HideLabel, ShowIf("sequencer", SequenceObject.Image)]
         public ImageSequence image = new();
@@ -30,6 +33,9 @@ namespace Kuroneko.UIUtility
         {
             switch (sequencer)
             {
+                case SequenceObject.GameObject:
+                    gameObject.AttachToSequence(_sequence, type);
+                    break;
                 case SequenceObject.RectTransform:
                     rectTransform.AttachToSequence(_sequence, type);
                     break;

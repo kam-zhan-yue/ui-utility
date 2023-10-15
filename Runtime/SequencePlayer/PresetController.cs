@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using Codice.Client.BaseCommands;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace Kuroneko.UIUtility
 {
     public class PresetController : MonoBehaviour
     {
+        [TableList]
         public List<Preset> presetList = new();
 
         public void SetPresetById(string _id)

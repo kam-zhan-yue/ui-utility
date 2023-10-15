@@ -8,5 +8,6 @@ namespace Kuroneko.UIUtility
     [Serializable]
     public enum CanvasGroupSequenceType
     {
+        DOFade = 0
     }
 }

@@ -16,5 +16,11 @@ namespace Kuroneko.UIUtility
         DOMoveX,
         DOMoveY,
         DOMoveZ,
+        DOLocalMove,
+        DOLocalMoveX,
+        DOLocalMoveY,
+        DOLocalMoveZ,
+        DORotate,
+        DOLocalRotate
     }
 }

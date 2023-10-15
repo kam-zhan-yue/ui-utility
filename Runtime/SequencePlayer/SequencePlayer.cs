@@ -24,31 +24,21 @@ namespace Kuroneko.UIUtility
         }
 
         [Button]
-        public void Play()
+        public void Play(Action _onComplete = null)
         {
             if (Application.isPlaying)
             {
                 Sequence sequence = ToSequence();
-                sequence.Play();
+                sequence.Play().OnComplete(() =>
+                {
+                    _onComplete?.Invoke();
+                });
             }
             else if (Application.isEditor)
             {
                 Sequence sequence = ToSequence();
                 DOTweenEditorPreview.PrepareTweenForPreview(sequence);
                 DOTweenEditorPreview.Start();
-            }
-        }
-
-        [Button]
-        public void Reset()
-        {
-            if (Application.isPlaying)
-            {
-                Sequence sequence = ToSequence();
-                sequence.PlayBackwards();
-            }
-            else if (Application.isEditor)
-            {
             }
         }
     }

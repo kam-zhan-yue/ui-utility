@@ -159,6 +159,89 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &241981970
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 241981971}
+  - component: {fileID: 241981972}
+  m_Layer: 5
+  m_Name: Hide Sequence
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &241981971
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 241981970}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1972463512}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &241981972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 241981970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d38c0c3682e6c4ab8ae788501df0e3e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tweenData:
+  - type: 0
+    sequenceData:
+      type: 0
+      sequencer: 0
+      rectTransform:
+        easing: 8
+        duration: 0.1
+        sequencer: {fileID: 1233710119}
+        type: 0
+        scale: {x: 0, y: 0, z: 0}
+        scaleX: 0
+        scaleY: 0
+        scaleZ: 0
+        move: {x: 1, y: 0, z: 0}
+        moveX: 0
+        moveY: 0
+        moveZ: 0
+        localMove: {x: 0, y: 0, z: 0}
+        localMoveX: 0
+        localMoveY: 0
+        localMoveZ: 0
+        rotate: {x: 180, y: 0, z: 0}
+        localRotate: {x: 0, y: 0, z: 0}
+      image:
+        easing: 1
+        duration: 0
+        type: {fileID: 0}
+        sequencer: 0
+      canvasGroup:
+        easing: 1
+        duration: 0
+        sequencer: {fileID: 0}
+        type: 0
+    interval: 0
 --- !u!1 &427877405
 GameObject:
   m_ObjectHideFlags: 0
@@ -447,6 +530,123 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &846163060
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 846163061}
+  - component: {fileID: 846163062}
+  m_Layer: 5
+  m_Name: Reset Sequence
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &846163061
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 846163060}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1972463512}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &846163062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 846163060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d38c0c3682e6c4ab8ae788501df0e3e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tweenData:
+  - type: 0
+    sequenceData:
+      type: 0
+      sequencer: 0
+      rectTransform:
+        easing: 1
+        duration: 0
+        sequencer: {fileID: 1233710119}
+        type: 13
+        scale: {x: 0, y: 0, z: 0}
+        scaleX: 0
+        scaleY: 0
+        scaleZ: 0
+        move: {x: 1, y: 0, z: 0}
+        moveX: 0
+        moveY: 0
+        moveZ: 0
+        localMove: {x: 0, y: 0, z: 0}
+        localMoveX: 0
+        localMoveY: 0
+        localMoveZ: 0
+        rotate: {x: 180, y: 0, z: 0}
+        localRotate: {x: 0, y: 0, z: 0}
+      image:
+        easing: 1
+        duration: 0
+        type: {fileID: 0}
+        sequencer: 0
+      canvasGroup:
+        easing: 1
+        duration: 0
+        sequencer: {fileID: 0}
+        type: 0
+    interval: 0
+  - type: 0
+    sequenceData:
+      type: 1
+      sequencer: 0
+      rectTransform:
+        easing: 1
+        duration: 0
+        sequencer: {fileID: 1233710119}
+        type: 0
+        scale: {x: 1, y: 1, z: 1}
+        scaleX: 0
+        scaleY: 0
+        scaleZ: 0
+        move: {x: 0, y: 0, z: 0}
+        moveX: 0
+        moveY: 0
+        moveZ: 0
+        localMove: {x: 0, y: 0, z: 0}
+        localMoveX: 0
+        localMoveY: 0
+        localMoveZ: 0
+        rotate: {x: 0, y: 0, z: 0}
+        localRotate: {x: 0, y: 0, z: 0}
+      image:
+        easing: 1
+        duration: 0
+        type: {fileID: 0}
+        sequencer: 0
+      canvasGroup:
+        easing: 1
+        duration: 0
+        sequencer: {fileID: 0}
+        type: 0
+    interval: 0
 --- !u!1 &1162930261
 GameObject:
   m_ObjectHideFlags: 0
@@ -565,9 +765,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56e684c34caa2457eb57600177cead4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainHolder: {fileID: 0}
-  showSequence: {fileID: 0}
-  hideSequence: {fileID: 0}
+  mainHolder: {fileID: 219013097}
+  showSequence: {fileID: 1446386426}
+  hideSequence: {fileID: 241981972}
+  resetSequence: {fileID: 846163062}
 --- !u!1 &1233710118
 GameObject:
   m_ObjectHideFlags: 0
@@ -694,21 +895,27 @@ MonoBehaviour:
   tweenData:
   - type: 0
     sequenceData:
-      type: 1
+      type: 0
       sequencer: 0
       rectTransform:
-        easing: 1
-        duration: 1
-        sequencer: {fileID: 0}
-        type: 0
-        scale: {x: 0, y: 0, z: 0}
-        scaleX: 0
+        easing: 5
+        duration: 0.5
+        sequencer: {fileID: 1233710119}
+        type: 1
+        scale: {x: 1, y: 1, z: 1}
+        scaleX: 1
         scaleY: 0
         scaleZ: 0
         move: {x: 0, y: 0, z: 0}
         moveX: 0
         moveY: 0
         moveZ: 0
+        localMove: {x: 0, y: 0, z: 0}
+        localMoveX: 0
+        localMoveY: 0
+        localMoveZ: 0
+        rotate: {x: 0, y: 0, z: 0}
+        localRotate: {x: 0, y: 0, z: 0}
       image:
         easing: 1
         duration: 0
@@ -749,6 +956,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1446386425}
+  - {fileID: 241981971}
+  - {fileID: 846163061}
   m_Father: {fileID: 1177980286}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}

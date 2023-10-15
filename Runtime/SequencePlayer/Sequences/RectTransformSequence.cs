@@ -38,6 +38,24 @@ namespace Kuroneko.UIUtility
         [HideLabel, HorizontalGroup("SequenceData"), ShowIf("type", RectTransformSequenceType.DOMoveZ)]
         public float moveZ;
 
+        [HideLabel, HorizontalGroup("SequenceData"), ShowIf("type", RectTransformSequenceType.DOLocalMove)]
+        public Vector3 localMove;
+        
+        [HideLabel, HorizontalGroup("SequenceData"), ShowIf("type", RectTransformSequenceType.DOLocalMoveX)]
+        public float localMoveX;
+        
+        [HideLabel, HorizontalGroup("SequenceData"), ShowIf("type", RectTransformSequenceType.DOLocalMoveY)]
+        public float localMoveY;
+        
+        [HideLabel, HorizontalGroup("SequenceData"), ShowIf("type", RectTransformSequenceType.DOLocalMoveZ)]
+        public float localMoveZ;
+        
+        [HideLabel, HorizontalGroup("SequenceData"), ShowIf("type", RectTransformSequenceType.DORotate)]
+        public Vector3 rotate;
+        
+        [HideLabel, HorizontalGroup("SequenceData"), ShowIf("type", RectTransformSequenceType.DOLocalRotate)]
+        public Vector3 localRotate;
+        
         public override Tween ToTween()
         {
             return type switch
@@ -50,6 +68,12 @@ namespace Kuroneko.UIUtility
                 RectTransformSequenceType.DOMoveX => sequencer.DOMoveX(moveX, duration).SetEase(easing),
                 RectTransformSequenceType.DOMoveY => sequencer.DOMoveY(moveY, duration).SetEase(easing),
                 RectTransformSequenceType.DOMoveZ => sequencer.DOMoveZ(moveZ, duration).SetEase(easing),
+                RectTransformSequenceType.DOLocalMove => sequencer.DOLocalMove(localMove, duration).SetEase(easing),
+                RectTransformSequenceType.DOLocalMoveX => sequencer.DOLocalMoveX(localMoveX, duration).SetEase(easing),
+                RectTransformSequenceType.DOLocalMoveY => sequencer.DOLocalMoveY(localMoveY, duration).SetEase(easing),
+                RectTransformSequenceType.DOLocalMoveZ => sequencer.DOLocalMoveZ(localMoveZ, duration).SetEase(easing),
+                RectTransformSequenceType.DORotate => sequencer.DORotate(rotate, duration).SetEase(easing),
+                RectTransformSequenceType.DOLocalRotate => sequencer.DOLocalRotate(localRotate, duration).SetEase(easing),
                 _ => throw new ArgumentOutOfRangeException()
             };
         }

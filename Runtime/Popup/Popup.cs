@@ -1,6 +1,7 @@
 using System;
 using Kuroneko.RuntimeUtility;
 using Sirenix.OdinInspector;
+using UnityEditor;
 using UnityEngine;
 
 namespace Kuroneko.UIUtility
@@ -12,6 +13,7 @@ namespace Kuroneko.UIUtility
 
         [BoxGroup("Sequences")] public SequencePlayer showSequence;
         [BoxGroup("Sequences")] public SequencePlayer hideSequence;
+        [BoxGroup("Sequences")] public SequencePlayer resetSequence;
         
         [NonSerialized, ShowInInspector, ReadOnly]
         public bool isAnimating = false;
@@ -20,6 +22,8 @@ namespace Kuroneko.UIUtility
         public bool isShowing = false;
     
         public Action<Popup> onCloseButtonClicked = null;
+        public Action<Popup> onDoneShowing = null;
+        public Action<Popup> onDoneHiding = null;
 
         private void Awake()
         {
@@ -28,16 +32,35 @@ namespace Kuroneko.UIUtility
 
         protected abstract void InitPopup();
 
+        [Button]
         public virtual void ShowPopup()
         {
             isShowing = true;
-            mainHolder.gameObject.SetActiveFast(true);
+            resetSequence.Play(() =>
+            {
+                showSequence.Play(OnDoneShowing);
+            });
         }
 
+        [Button]
         public virtual void HidePopup()
         {
             isShowing = false;
-            mainHolder.gameObject.SetActiveFast(false);
+            hideSequence.Play(OnDoneHiding);
+        }
+
+        protected virtual void OnDoneShowing()
+        {
+            isShowing = true;
+            isAnimating = false;
+            onDoneShowing?.Invoke(this);   
+        }
+
+        protected virtual void OnDoneHiding()
+        {
+            isShowing = false;
+            isAnimating = false;
+            onDoneHiding?.Invoke(this);
         }
     
         public virtual void CloseButtonClicked()

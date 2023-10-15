@@ -1,6 +1,5 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
+using Kuroneko.RuntimeUtility;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
@@ -29,13 +28,13 @@ namespace Kuroneko.UIUtility
         public virtual void ShowPopup()
         {
             isShowing = true;
-            mainHolder.gameObject.SetActive(true);
+            mainHolder.gameObject.SetActiveFast(true);
         }
 
         public virtual void HidePopup()
         {
             isShowing = false;
-            mainHolder.gameObject.SetActive(false);
+            mainHolder.gameObject.SetActiveFast(false);
         }
     
         public virtual void CloseButtonClicked()

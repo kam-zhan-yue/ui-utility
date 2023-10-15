@@ -4,6 +4,9 @@
 	"displayName": "UI Utility",
 	"description": "Lightweight package for Unity UI",
 	"unity": "2022.3",
+	"dependencies": {
+		"com.kamzhanyue.unity-utility": "0.1.0"
+	},
 	"author": {
 		"name": "Kam Zhan Yue",
 		"email": "kamzhanyue@gmail.com",

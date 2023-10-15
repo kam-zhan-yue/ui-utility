@@ -1,3 +1,16 @@
 {
-	"name": "Kuroneko.UIUtility"
+    "name": "Kuroneko.UIUtility",
+    "rootNamespace": "",
+    "references": [
+        "GUID:02054187d41f5471eb0b6169df0f8311"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
 }

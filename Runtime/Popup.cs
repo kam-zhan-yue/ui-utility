@@ -9,7 +9,10 @@ namespace Kuroneko.UIUtility
     {
         [BoxGroup("UI Objects")]
         public RectTransform mainHolder;
-    
+
+        [BoxGroup("Sequences")] public SequencePlayer showSequence;
+        [BoxGroup("Sequences")] public SequencePlayer hideSequence;
+        
         [NonSerialized, ShowInInspector, ReadOnly]
         public bool isAnimating = false;
     

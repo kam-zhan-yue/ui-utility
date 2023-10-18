@@ -23,6 +23,11 @@ namespace Kuroneko.UIUtility
             return sequence;
         }
 
+        public void AttachToSequence(Sequence _sequence)
+        {
+            _sequence.Append(ToSequence());
+        }
+
         [Button]
         public void Play(Action _onComplete = null)
         {

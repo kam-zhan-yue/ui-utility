@@ -21,6 +21,17 @@ namespace Kuroneko.UIUtility
         [HideLabel, ShowIf("type", TweenType.Interval)]
         public float interval;
 
+        [HideLabel, ShowIf("type", TweenType.SequencePlayer)]
+        public SequencePlayer sequencePlayer;
+        
+        [HideLabel, ShowIf("type", TweenType.PresetController)]
+        [HorizontalGroup()]
+        public PresetController presetController;
+
+        [HideLabel, ShowIf("type", TweenType.PresetController)]
+        [HorizontalGroup()]
+        public string presetId;
+        
         public void AttachToSequence(Sequence _sequence)
         {
             switch (type)
@@ -33,6 +44,15 @@ namespace Kuroneko.UIUtility
                     break;
                 case TweenType.Interval:
                     _sequence.AppendInterval(interval);
+                    break;
+                case TweenType.SequencePlayer:
+                    sequencePlayer.AttachToSequence(_sequence);
+                    break;
+                case TweenType.PresetController:
+                    _sequence.AppendCallback(() =>
+                    {
+                        presetController.SetPresetById(presetId);
+                    });
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();
@@ -53,7 +73,11 @@ namespace Kuroneko.UIUtility
                 case TweenType.Callback:
                     return Color.red;
                 case TweenType.Interval:
-                    return Color.grey;
+                    return Color.magenta;
+                case TweenType.SequencePlayer:
+                    return Color.cyan;
+                case TweenType.PresetController:
+                    return Color.blue;
                 default:
                     throw new ArgumentOutOfRangeException();
             }

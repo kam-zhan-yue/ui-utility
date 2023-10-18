@@ -8,6 +8,8 @@ namespace Kuroneko.UIUtility
     {
         Sequence = 0,
         Callback = 1,
-        Interval = 2
+        Interval = 2,
+        SequencePlayer = 3,
+        PresetController = 4
     }
 }

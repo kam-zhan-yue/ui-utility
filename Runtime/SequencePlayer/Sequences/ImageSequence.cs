@@ -4,7 +4,7 @@ using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Kuroneko.UIUtility
+namespace Kuroneko.UIDelivery
 {
     [Serializable]
     public class ImageSequence : SequenceTween

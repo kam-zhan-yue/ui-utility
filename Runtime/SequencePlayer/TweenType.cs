@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Kuroneko.UIUtility
+namespace Kuroneko.UIDelivery
 {
     public enum TweenType
     {

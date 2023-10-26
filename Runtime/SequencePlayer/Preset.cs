@@ -1,7 +1,7 @@
 using System;
 using Sirenix.OdinInspector;
 
-namespace Kuroneko.UIUtility
+namespace Kuroneko.UIDelivery
 {
     [Serializable]
     public class Preset

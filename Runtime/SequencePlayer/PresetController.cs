@@ -5,7 +5,7 @@ using Codice.Client.BaseCommands;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
-namespace Kuroneko.UIUtility
+namespace Kuroneko.UIDelivery
 {
     [Serializable]
     public class PresetController : MonoBehaviour

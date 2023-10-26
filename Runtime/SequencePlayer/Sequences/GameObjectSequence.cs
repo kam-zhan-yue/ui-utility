@@ -3,7 +3,7 @@ using DG.Tweening;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
-namespace Kuroneko.UIUtility
+namespace Kuroneko.UIDelivery
 {
     [Serializable]
     public class GameObjectSequence : SequenceTween

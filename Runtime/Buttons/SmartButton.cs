@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
 
-namespace Kuroneko.UIUtility
+namespace Kuroneko.UIDelivery
 {
     public class SmartButton : Button, IBeginDragHandler, IEndDragHandler
     {

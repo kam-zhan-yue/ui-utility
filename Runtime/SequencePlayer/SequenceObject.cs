@@ -1,6 +1,6 @@
 using System;
 
-namespace Kuroneko.UIUtility
+namespace Kuroneko.UIDelivery
 {
     [Serializable]
     public enum SequenceObject

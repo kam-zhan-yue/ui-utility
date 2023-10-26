@@ -4,7 +4,7 @@ using UnityEditor;
 using UnityEditor.UI;
 using UnityEngine;
 
-namespace Kuroneko.UIUtility
+namespace Kuroneko.UIDelivery
 {
     [CustomEditor(typeof(SmartButton), true)]
     [CanEditMultipleObjects]

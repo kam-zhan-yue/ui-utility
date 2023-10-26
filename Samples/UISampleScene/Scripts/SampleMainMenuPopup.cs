@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using Kuroneko.UIUtility;
+using Kuroneko.UIDelivery;
 using UnityEngine;
 
 public class SampleMainMenuPopup : Popup

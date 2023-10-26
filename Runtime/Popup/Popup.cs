@@ -4,7 +4,7 @@ using Sirenix.OdinInspector;
 using UnityEditor;
 using UnityEngine;
 
-namespace Kuroneko.UIUtility
+namespace Kuroneko.UIDelivery
 {
     public abstract class Popup : MonoBehaviour
     {

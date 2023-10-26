@@ -7,7 +7,7 @@ using Sirenix.OdinInspector;
 using UnityEngine;
 
 
-namespace Kuroneko.UIUtility
+namespace Kuroneko.UIDelivery
 {
     public class SequencePlayer : MonoBehaviour
     {

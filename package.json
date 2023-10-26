@@ -1,11 +1,11 @@
 {
-	"name": "com.kamzhanyue.ui-utility",
+	"name": "com.kamzhanyue.ui-delivery",
 	"version": "0.1.0",
-	"displayName": "UI Utility",
+	"displayName": "UI Delivery",
 	"description": "Lightweight package for Unity UI",
 	"unity": "2022.3",
 	"dependencies": {
-		"com.kamzhanyue.unity-utility": "0.1.0"
+		"com.kamzhanyue.utility-delivery": "0.1.0"
 	},
 	"author": {
 		"name": "Kam Zhan Yue",

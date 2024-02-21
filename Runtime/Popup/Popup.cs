@@ -1,4 +1,5 @@
 using System;
+using Kuroneko.UtilityDelivery;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
@@ -9,9 +10,10 @@ namespace Kuroneko.UIDelivery
         [BoxGroup("UI Objects")]
         public RectTransform mainHolder;
 
-        [BoxGroup("Sequences")] public SequencePlayer showSequence;
-        [BoxGroup("Sequences")] public SequencePlayer hideSequence;
-        [BoxGroup("Sequences")] public SequencePlayer resetSequence;
+        [BoxGroup("Sequences")] public bool usingSequences;
+        [BoxGroup("Sequences"), ShowIf("usingSequences")] public SequencePlayer showSequence;
+        [BoxGroup("Sequences"), ShowIf("usingSequences")] public SequencePlayer hideSequence;
+        [BoxGroup("Sequences"), ShowIf("usingSequences")] public SequencePlayer resetSequence;
         
         [NonSerialized, ShowInInspector, ReadOnly]
         public bool isAnimating = false;
@@ -33,20 +35,34 @@ namespace Kuroneko.UIDelivery
         [Button]
         public virtual void ShowPopup()
         {
-            isShowing = true;
-            isAnimating = true;
-            resetSequence.Play(() =>
+            if (usingSequences)
             {
-                showSequence.Play(OnDoneShowing);
-            });
+                isAnimating = true;
+                resetSequence.Play(() =>
+                {
+                    showSequence.Play(OnDoneShowing);
+                });
+            }
+            else
+            {
+                isShowing = true;
+                mainHolder.gameObject.SetActiveFast(true);
+            }
         }
 
         [Button]
         public virtual void HidePopup()
         {
-            isShowing = false;
-            isAnimating = true;
-            hideSequence.Play(OnDoneHiding);
+            if (usingSequences)
+            {
+                isAnimating = true;
+                hideSequence.Play(OnDoneHiding);
+            }
+            else
+            {
+                isShowing = false;
+                mainHolder.gameObject.SetActiveFast(false);
+            }
         }
 
         protected virtual void OnDoneShowing()

@@ -13,11 +13,11 @@ namespace Kuroneko.UIDelivery
         [TableList]
         public List<Preset> presetList = new();
 
-        public void SetPresetById(string _id)
+        public void SetPresetById(string id)
         {
             for (int i = 0; i < presetList.Count; ++i)
             {
-                if (_id == presetList[i].id)
+                if (id == presetList[i].id)
                     presetList[i].Set();
             }
         }

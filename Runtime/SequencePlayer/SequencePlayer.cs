@@ -23,20 +23,20 @@ namespace Kuroneko.UIDelivery
             return sequence;
         }
 
-        public void AttachToSequence(Sequence _sequence)
+        public void AttachToSequence(Sequence sequence)
         {
-            _sequence.Append(ToSequence());
+            sequence.Append(ToSequence());
         }
 
         [Button]
-        public void Play(Action _onComplete = null)
+        public void Play(Action onComplete = null)
         {
             if (Application.isPlaying)
             {
                 Sequence sequence = ToSequence();
                 sequence.Play().OnComplete(() =>
                 {
-                    _onComplete?.Invoke();
+                    onComplete?.Invoke();
                 });
             }
             else if (Application.isEditor)

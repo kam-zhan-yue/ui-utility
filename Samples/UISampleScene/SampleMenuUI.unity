@@ -311,108 +311,6 @@ MonoBehaviour:
     sequencePlayer: {fileID: 0}
     presetController: {fileID: 0}
     presetId: 
-  - type: 1
-    sequenceData:
-      type: 0
-      sequencer: 0
-      gameObject:
-        easing: 1
-        duration: 0
-        type: 0
-        sequencer: {fileID: 0}
-        scale: {x: 0, y: 0, z: 0}
-        scaleX: 0
-        scaleY: 0
-        scaleZ: 0
-        move: {x: 0, y: 0, z: 0}
-        moveX: 0
-        moveY: 0
-        moveZ: 0
-        localMove: {x: 0, y: 0, z: 0}
-        localMoveX: 0
-        localMoveY: 0
-        localMoveZ: 0
-        rotate: {x: 0, y: 0, z: 0}
-        localRotate: {x: 0, y: 0, z: 0}
-      rectTransform:
-        easing: 1
-        duration: 0
-        type: 0
-        sequencer: {fileID: 0}
-        anchorMax: {x: 0, y: 0}
-        anchorMin: {x: 0, y: 0}
-        anchorPos: {x: 0, y: 0}
-        anchorPos3D: {x: 0, y: 0, z: 0}
-        pivot: {x: 0, y: 0}
-        punch: {x: 0, y: 0}
-        shake: {x: 0, y: 0, z: 0}
-        size: {x: 0, y: 0}
-        center: {x: 0, y: 0, z: 0}
-        endValueDegrees: 0
-      image:
-        easing: 1
-        duration: 0
-        sequencer: {fileID: 0}
-        type: 0
-        color: {r: 0, g: 0, b: 0, a: 0}
-        fade: 0
-        fillAmount: 0
-        gradient:
-          serializedVersion: 2
-          key0: {r: 1, g: 1, b: 1, a: 1}
-          key1: {r: 1, g: 1, b: 1, a: 1}
-          key2: {r: 0, g: 0, b: 0, a: 0}
-          key3: {r: 0, g: 0, b: 0, a: 0}
-          key4: {r: 0, g: 0, b: 0, a: 0}
-          key5: {r: 0, g: 0, b: 0, a: 0}
-          key6: {r: 0, g: 0, b: 0, a: 0}
-          key7: {r: 0, g: 0, b: 0, a: 0}
-          ctime0: 0
-          ctime1: 65535
-          ctime2: 0
-          ctime3: 0
-          ctime4: 0
-          ctime5: 0
-          ctime6: 0
-          ctime7: 0
-          atime0: 0
-          atime1: 65535
-          atime2: 0
-          atime3: 0
-          atime4: 0
-          atime5: 0
-          atime6: 0
-          atime7: 0
-          m_Mode: 0
-          m_ColorSpace: -1
-          m_NumColorKeys: 2
-          m_NumAlphaKeys: 2
-        blendColor: {r: 0, g: 0, b: 0, a: 0}
-      canvasGroup:
-        easing: 1
-        duration: 0
-        type: 0
-        sequencer: {fileID: 0}
-        fade: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1233710118}
-          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_MethodName: SetActive
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 1
-    interval: 0
-    sequencePlayer: {fileID: 0}
-    presetController: {fileID: 0}
-    presetId: 
 --- !u!1 &427877405
 GameObject:
   m_ObjectHideFlags: 0
@@ -1039,7 +937,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1078563207
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1296,7 +1194,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1233710119
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1314,7 +1212,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -1920, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1233710120
@@ -1330,7 +1228,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.18359868, g: 0.126157, b: 0.254717, a: 1}
+  m_Color: {r: 0.18359868, g: 0.126157, b: 0.254717, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

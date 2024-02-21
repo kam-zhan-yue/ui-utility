@@ -34,6 +34,7 @@ namespace Kuroneko.UIDelivery
         public virtual void ShowPopup()
         {
             isShowing = true;
+            isAnimating = true;
             resetSequence.Play(() =>
             {
                 showSequence.Play(OnDoneShowing);
@@ -44,6 +45,7 @@ namespace Kuroneko.UIDelivery
         public virtual void HidePopup()
         {
             isShowing = false;
+            isAnimating = true;
             hideSequence.Play(OnDoneHiding);
         }
 

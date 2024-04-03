@@ -8,7 +8,11 @@ namespace Kuroneko.UIDelivery
     [Serializable]
     public enum RectTransformSequenceType
     {
-        DOAnchorMax = 0,
+        DOMove,
+        DOMoveX,
+        DOMoveY,
+        DOMoveZ,
+        DOAnchorMax,
         DOAnchorMin,
         DOAnchorPos,
         DOAnchorPos3D,

@@ -1,7 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using DG.DOTweenEditor;
+// using DG.DOTweenEditor;
 using DG.Tweening;
 using Sirenix.OdinInspector;
 using UnityEngine;
@@ -41,9 +41,9 @@ namespace Kuroneko.UIDelivery
             }
             else if (Application.isEditor)
             {
-                Sequence sequence = ToSequence();
-                DOTweenEditorPreview.PrepareTweenForPreview(sequence);
-                DOTweenEditorPreview.Start();
+                // Sequence sequence = ToSequence();
+                // DOTweenEditorPreview.PrepareTweenForPreview(sequence);
+                // DOTweenEditorPreview.Start();
             }
         }
     }

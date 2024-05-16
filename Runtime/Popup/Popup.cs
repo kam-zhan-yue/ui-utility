@@ -30,7 +30,10 @@ namespace Kuroneko.UIDelivery
             InitPopup();
         }
 
-        protected abstract void InitPopup();
+        protected virtual void InitPopup()
+        {
+            
+        }
 
         [Button]
         public virtual void ShowPopup()

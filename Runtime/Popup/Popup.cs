@@ -32,7 +32,11 @@ namespace Kuroneko.UIDelivery
 
         protected virtual void InitPopup()
         {
-            ServiceLocator.Instance.Get<IPopupService>().Register(this);
+        }
+
+        protected void Register(Popup popup)
+        {
+            ServiceLocator.Instance.Get<IPopupService>().Register(popup);
         }
 
         [Button]

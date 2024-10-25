@@ -46,7 +46,8 @@ namespace Kuroneko.UIDelivery
             else
             {
                 isShowing = true;
-                mainHolder.gameObject.SetActiveFast(true);
+                if (mainHolder)
+                    mainHolder.gameObject.SetActiveFast(true);
             }
         }
 
@@ -61,7 +62,8 @@ namespace Kuroneko.UIDelivery
             else
             {
                 isShowing = false;
-                mainHolder.gameObject.SetActiveFast(false);
+                if (mainHolder)
+                    mainHolder.gameObject.SetActiveFast(false);
             }
         }
 
